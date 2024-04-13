@@ -3,8 +3,17 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import {db} from '@/app/drizzle.server';
+import { todo } from './schema';
 
-export default function Page() {
+export default async function Page() {
+  // const users = await db.select().from(todo);
+  // console.log('users', users);
+  // await db.insert(todo).values({
+  //   id: 0,
+  //   text: 'Learn Next.js',
+  // });
+  console.log('slkdjflsdkflkj')
   return (
     <main className="flex min-h-screen flex-col p-6">
       {/* <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent" /> */}
